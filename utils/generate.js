@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import { exit } from "process";
-import { getDirectory } from "./getDirectory";
-import { moduleTemplate, testTemplate } from "./templates";
+import { getDirectory } from "./getDirectory.js";
+import { moduleTemplate, testTemplate } from "./templates.js";
 
 const { dirExists, dayDirPath } = getDirectory();
 
@@ -22,4 +22,4 @@ if (!dirExists) {
   );
 });
 
-fs.writeFileSync(path.join(dayDirPath, "input"));
+fs.writeFileSync(path.join(dayDirPath, "input"), "");
