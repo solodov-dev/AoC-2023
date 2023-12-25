@@ -1,2 +1,2 @@
-# aoc-2023
-Advent of Code 2023
+# AoC-2023-JS
+Advent of Code 2023 - JavaScript solutions
