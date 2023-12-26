@@ -24,3 +24,13 @@ export default (input) =>
       return nums[0] + nums[nums.length - 1];
     })
     .reduce((acc, cur) => acc + Number(cur), 0);
+
+export const description = "What is the sum of all of the calibration values? ";
+export const input = `two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen`;
+export const output = 281;

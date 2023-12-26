@@ -1,6 +1,5 @@
-export default (input) => {};
+export default (input) => {}
 
 export const description = "";
 export const input = ``;
-export const output = "";
-
+export const output = ;

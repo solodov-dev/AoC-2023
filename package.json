@@ -7,10 +7,7 @@
   "scripts": {
     "generate": "node ./utils/generate.js",
     "solve": "node ./utils/solve.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-  },
-  "jest": {
-    "transform": {}
+    "test": "node ./utils/test.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +20,5 @@
     "url": "https://github.com/solodov-dev/aoc-2023/issues"
   },
   "homepage": "https://github.com/solodov-dev/aoc-2023#readme",
-  "dependencies": {
-    "jest": "^29.7.0"
-  }
+  "dependencies": {}
 }

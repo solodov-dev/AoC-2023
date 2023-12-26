@@ -16,3 +16,6 @@ const parseGame = (line) =>
     1
   );
 
+export const description = "What is the sum of the power of these sets?";
+export { input } from "./part1.js";
+export const output = 2286;

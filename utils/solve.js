@@ -1,7 +1,7 @@
 import { exit } from "process";
 import fs from "fs";
 import path from "path";
-import { getDirectory } from "./getDirectory.js";
+import { getDirectory } from "./directory.js";
 
 const { dirExists, dayDirPath, day } = getDirectory();
 
