@@ -16,6 +16,11 @@ for (const part of ["part1", "part2"]) {
   const mod = await import(path.join(dayDirPath, `${part}.js`));
   console.log(
     `Day ${day} ${part}: `,
-    mod.default(input.split("\n").slice(0, -1).join("\n"))
+    mod.default(
+      input
+        .split("\n")
+        .filter((c) => c)
+        .join("\n")
+    )
   );
 }
