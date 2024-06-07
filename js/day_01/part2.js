@@ -25,5 +25,3 @@ export default (input) =>
       return nums[0] + nums[nums.length - 1];
     })
     .reduce((acc, cur) => acc + Number(cur), 0);
-
-export const description = "What is the sum of all of the calibration values? ";
