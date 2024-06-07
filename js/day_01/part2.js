@@ -13,11 +13,12 @@ const numbers = {
 export default (input) =>
   input
     .split("\n")
+    .filter(Boolean)
     .map((line) => {
       for (const [strNum, num] of Object.entries(numbers)) {
         line = line.replaceAll(
           strNum,
-          `${strNum.slice(0, 1)}${num}${strNum.slice(1)}`
+          `${strNum.slice(0, 1)}${num}${strNum.slice(1)}`,
         );
       }
       const nums = line.replaceAll(/\D/g, "");
@@ -26,11 +27,3 @@ export default (input) =>
     .reduce((acc, cur) => acc + Number(cur), 0);
 
 export const description = "What is the sum of all of the calibration values? ";
-export const input = `two1nine
-eightwothree
-abcone2threexyz
-xtwone3four
-4nineeightseven2
-zoneight234
-7pqrstsixteen`;
-export const output = 281;

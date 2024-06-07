@@ -1,6 +1,7 @@
 import { sum } from "./shared.js";
 
-export default (input) => input.split("\n").map(checkLine).reduce(sum, 0);
+export default (input) =>
+  input.split("\n").filter(Boolean).map(checkLine).reduce(sum, 0);
 
 const getNumbers = (line) => line.match(/\d+/g) || [];
 
@@ -39,17 +40,3 @@ const isAdjacent = (start, end, lineNumber, input) => {
   }
   return symbols.test(adjacentChars);
 };
-
-export const description =
-  "What is the sum of all of the part numbers in the engine schematic?";
-export const input = `467..114..
-...*......
-..35..633.
-......#...
-617*......
-.....+.58.
-..592.....
-......755.
-...$.*....
-.664.598..`;
-export const output = 4361;

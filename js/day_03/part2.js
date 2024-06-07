@@ -55,19 +55,3 @@ const getNums = (line, index) => {
   }
   return [];
 };
-
-export const description =
-  "What is the sum of all of the gear ratios in your engine schematic?";
-export const input = `12.......*..
-+.........34
-.......-12..
-..78........
-..*....60...
-78..........
-.......23...
-....90*12...
-............
-2.2......12.
-.*.........*
-1.1.......56`;
-export const output = 6756;
