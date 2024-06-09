@@ -9,7 +9,7 @@ int main(void) {
 
   while (getline(&line, &len, stdin) != -1) {
     char *start = line;
-    char *end = start + strlen(line) - 1;
+    char *end = start + strlen(line);
 
     while (!isdigit(*start)) {
       start++;
